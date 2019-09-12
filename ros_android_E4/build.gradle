@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        applicationId "com.example.ros_android_e4"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.empatica.empalink:empalink:2.1@aar'
+    implementation files('libs/empatica_e4_msgs-0.3.0.jar')
+    implementation 'com.github.rosjava.android_remocons:common_tools:[0.3,0.4)'
+    implementation 'org.ros.android_core:android_core_components:[0.4,0.5)'
+    implementation 'org.ros.rosjava_core:rosjava_geometry:[0.3,0.4)'
+}

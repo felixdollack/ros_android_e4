@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ROS Android E4</string>
+    <string name="accel">accel</string>
+    <string name="accel_x">accel_x</string>
+    <string name="accel_y">y:</string>
+    <string name="accel_z">z:</string>
+    <string name="bvp_label">BVP</string>
+    <string name="eda_label">EDA</string>
+    <string name="ibi_label">IBI</string>
+    <string name="emptyText">-</string>
+    <string name="temp_label">Temperature</string>
+    <string name="battery_label">Battery</string>
+
+    <string name="stop_app">Stop Streaming</string>
+</resources>
