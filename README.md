@@ -1,3 +1,7 @@
+# Ros Android E4
+This is an android application that merges the example projects of using
+ROS and Empatica on Android.
+
 
 ## Requirements
 
@@ -6,6 +10,7 @@
 * [Empatica module] for ROS
 * Empatica API key
 * Empatica library (empalink)
+
 
 ## Setup
 First, download the android project.
@@ -26,6 +31,7 @@ that is currently in the project does not work.
 In the menu select `Build -> Make project` or press the play icon in the icon
 bar. The popup menu for `Open edit Run/Debug configurations dialog` should be
 set to `ros_android_E4`.
+
 
 ## Run app on Device
 To install apps on your device it has to be in debug mode. Open Settings and
